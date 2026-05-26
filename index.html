@@ -3,56 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>پورتفولیوی گیت‌هاب</title>
-    <meta name="description" content="پورتفولیو که مستقیماً از گیت‌هاب شما پر می‌شود" />
+
+    <title>پورتفولیو | توسعه‌دهنده وب</title>
+    <meta name="description" content="پورتفولیوی شخصی من برای معرفی مهارت‌ها، پروژه‌ها و راه‌های ارتباطی" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="hero">
-      <div class="container">
-        <h1>پورتفولیوی زنده از گیت‌هاب</h1>
-        <p class="muted">به‌جای متن فیک، اطلاعات مستقیم از GitHub API لود می‌شود.</p>
-        <form id="usernameForm" class="username-form">
-          <label for="usernameInput">یوزرنیم گیت‌هاب:</label>
-          <input id="usernameInput" name="username" type="text" placeholder="مثلاً torvalds" required />
-          <button type="submit">بارگذاری</button>
-        </form>
-        <p id="status" class="status"></p>
+      <div class="container hero-wrap">
+        <p class="eyebrow">PERSONAL PORTFOLIO</p>
+        <h1>سلام، من یک توسعه‌دهنده وب محصول‌محور هستم.</h1>
+        <p class="subtitle">
+          تمرکز من روی ساخت تجربه‌های سریع، زیبا و مقیاس‌پذیر است؛ از طراحی رابط کاربری تا پیاده‌سازی بک‌اند.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#projects">مشاهده پروژه‌ها</a>
+          <a class="btn" href="#contact">تماس با من</a>
+        </div>
       </div>
     </header>
 
-    <main class="container">
-      <section id="profile" class="card hidden">
-        <div class="profile-head">
-          <img id="avatar" alt="avatar" />
-          <div>
-            <h2 id="name"></h2>
-            <p id="bio" class="muted"></p>
-            <div class="links">
-              <a id="githubLink" target="_blank" rel="noreferrer">GitHub</a>
-              <a id="blogLink" target="_blank" rel="noreferrer" class="hidden">Website</a>
-            </div>
-          </div>
-        </div>
-        <div class="stats" id="stats"></div>
+    <main>
+      <section id="about" class="container section">
+        <h2>درباره من</h2>
+        <p>
+          من روی توسعه وب مدرن کار می‌کنم و علاقه‌مندم محصولاتی بسازم که هم از نظر فنی قوی باشند و هم تجربه کاربری عالی ارائه دهند.
+          در پروژه‌ها روی کیفیت کد، معماری تمیز و تحویل سریع تمرکز دارم.
+        </p>
       </section>
 
-      <section id="reposSection" class="hidden">
-        <div class="section-head">
-          <h2>بهترین ریپازیتوری‌ها</h2>
-          <p class="muted">مرتب‌شده بر اساس ستاره</p>
+      <section id="skills" class="container section">
+        <h2>مهارت‌ها</h2>
+        <div class="chips">
+          <span>JavaScript / TypeScript</span>
+          <span>React / Next.js</span>
+          <span>Node.js / Express</span>
+          <span>REST API / GraphQL</span>
+          <span>PostgreSQL / MongoDB</span>
+          <span>Docker / CI-CD</span>
+          <span>Tailwind / CSS</span>
+          <span>System Design</span>
         </div>
-        <div id="repos" class="repo-grid"></div>
       </section>
 
-      <section id="langsSection" class="card hidden">
-        <h2>تکنولوژی‌های پرتکرار</h2>
-        <div id="langs" class="chips"></div>
+      <section id="projects" class="container section">
+        <h2>پروژه‌های منتخب</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>داشبورد مدیریت فروش</h3>
+            <p>پیاده‌سازی داشبورد کامل برای مدیریت سفارش‌ها، مشتریان و گزارش‌های مالی با تمرکز روی سرعت و سادگی استفاده.</p>
+            <ul>
+              <li>بهینه‌سازی API و کاهش زمان پاسخ</li>
+              <li>رابط کاربری ریسپانسیو برای موبایل و دسکتاپ</li>
+              <li>استقرار خودکار با CI/CD</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <h3>پلتفرم رزرو آنلاین</h3>
+            <p>ساخت سرویس رزرو با جست‌وجوی پیشرفته، پرداخت امن و مدیریت ظرفیت در لحظه برای مقیاس بالا.</p>
+            <ul>
+              <li>احراز هویت و مجوزدهی امن</li>
+              <li>معماری قابل‌گسترش برای رشد محصول</li>
+              <li>مانیتورینگ و هشداردهی عملیاتی</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <h3>وب‌سایت شرکتی بهینه برای SEO</h3>
+            <p>بازطراحی تجربه کاربری و ساختار محتوا با تمرکز بر Core Web Vitals و افزایش نرخ تبدیل کاربران.</p>
+            <ul>
+              <li>بهبود سرعت لود صفحات</li>
+              <li>بهینه‌سازی ساختار محتوا و لینک‌ها</li>
+              <li>افزایش عملکرد صفحات ورودی</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="container section contact">
+        <h2>ارتباط با من</h2>
+        <p>برای همکاری، پروژه جدید یا فرصت شغلی خوشحال می‌شوم در تماس باشیم.</p>
+        <div class="contact-links">
+          <a href="mailto:you@example.com">you@example.com</a>
+          <a href="https://github.com/your-username" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> ساخته‌شده برای نمایش واقعی پروفایل شما</p>
+      <p>© <span id="year"></span> تمامی حقوق محفوظ است.</p>
+
     </footer>
 
     <script src="script.js"></script>
