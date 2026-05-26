@@ -1,102 +1,139 @@
-<!doctype html>
-<html lang="fa" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>پورتفولیو | توسعه‌دهنده وب</title>
-    <meta name="description" content="پورتفولیوی شخصی من برای معرفی مهارت‌ها، پروژه‌ها و راه‌های ارتباطی" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="hero">
-      <div class="container hero-wrap">
-        <p class="eyebrow">PERSONAL PORTFOLIO</p>
-        <h1>سلام، من یک توسعه‌دهنده وب محصول‌محور هستم.</h1>
-        <p class="subtitle">
-          تمرکز من روی ساخت تجربه‌های سریع، زیبا و مقیاس‌پذیر است؛ از طراحی رابط کاربری تا پیاده‌سازی بک‌اند.
-        </p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#projects">مشاهده پروژه‌ها</a>
-          <a class="btn" href="#contact">تماس با من</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Systems & ML</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#home" class="logo">Portfolio.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-      </div>
+    </nav>
+
+    <header id="home" class="hero section">
+        <div class="hero-content fade-in">
+            <h1>Hi, I'm <span class="highlight">[Your Name]</span></h1>
+            <p class="subtitle">Systems Developer & Machine Learning Enthusiast</p>
+            <p class="description">Bridging the gap between low-level system architecture and parameter-efficient AI.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="https://github.com/yourusername" target="_blank" class="btn secondary-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
     </header>
 
-    <main>
-      <section id="about" class="container section">
-        <h2>درباره من</h2>
-        <p>
-          من روی توسعه وب مدرن کار می‌کنم و علاقه‌مندم محصولاتی بسازم که هم از نظر فنی قوی باشند و هم تجربه کاربری عالی ارائه دهند.
-          در پروژه‌ها روی کیفیت کد، معماری تمیز و تحویل سریع تمرکز دارم.
-        </p>
-      </section>
-
-      <section id="skills" class="container section">
-        <h2>مهارت‌ها</h2>
-        <div class="chips">
-          <span>JavaScript / TypeScript</span>
-          <span>React / Next.js</span>
-          <span>Node.js / Express</span>
-          <span>REST API / GraphQL</span>
-          <span>PostgreSQL / MongoDB</span>
-          <span>Docker / CI-CD</span>
-          <span>Tailwind / CSS</span>
-          <span>System Design</span>
+    <section id="about" class="section">
+        <div class="container fade-in">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I am a developer with a deep interest in both the underlying logic of operating systems and the frontier of machine learning. Currently acting as a Teaching Assistant for Linear Algebra, I enjoy translating complex mathematical concepts into practical, computable realities.</p>
+                <p>My work spans from designing persistent file systems in C to replicating cutting-edge PEFT papers like LoRA from scratch. I am actively expanding my expertise into DevOps to ensure the pipelines I build for computational biology and edge computing are robust, scalable, and ready for production environments.</p>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section id="projects" class="container section">
-        <h2>پروژه‌های منتخب</h2>
-        <div class="project-grid">
-          <article class="project-card">
-            <h3>داشبورد مدیریت فروش</h3>
-            <p>پیاده‌سازی داشبورد کامل برای مدیریت سفارش‌ها، مشتریان و گزارش‌های مالی با تمرکز روی سرعت و سادگی استفاده.</p>
-            <ul>
-              <li>بهینه‌سازی API و کاهش زمان پاسخ</li>
-              <li>رابط کاربری ریسپانسیو برای موبایل و دسکتاپ</li>
-              <li>استقرار خودکار با CI/CD</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <h3>پلتفرم رزرو آنلاین</h3>
-            <p>ساخت سرویس رزرو با جست‌وجوی پیشرفته، پرداخت امن و مدیریت ظرفیت در لحظه برای مقیاس بالا.</p>
-            <ul>
-              <li>احراز هویت و مجوزدهی امن</li>
-              <li>معماری قابل‌گسترش برای رشد محصول</li>
-              <li>مانیتورینگ و هشداردهی عملیاتی</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <h3>وب‌سایت شرکتی بهینه برای SEO</h3>
-            <p>بازطراحی تجربه کاربری و ساختار محتوا با تمرکز بر Core Web Vitals و افزایش نرخ تبدیل کاربران.</p>
-            <ul>
-              <li>بهبود سرعت لود صفحات</li>
-              <li>بهینه‌سازی ساختار محتوا و لینک‌ها</li>
-              <li>افزایش عملکرد صفحات ورودی</li>
-            </ul>
-          </article>
+    <section id="skills" class="section bg-alt">
+        <div class="container fade-in">
+            <h2 class="section-title">Technical Arsenal</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-microchip"></i> Systems & Edge</h3>
+                    <ul>
+                        <li>C & C++</li>
+                        <li>FUSE & File Systems</li>
+                        <li>Real-Time Systems (EDF/LDF)</li>
+                        <li>Vehicular Edge Computing (VEC)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> AI & Machine Learning</h3>
+                    <ul>
+                        <li>PyTorch & PyTorch Geometric</li>
+                        <li>PEFT (LoRA)</li>
+                        <li>Reinforcement Learning</li>
+                        <li>MOVE Pipelines</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Engineering</h3>
+                    <ul>
+                        <li>Linux & Shell Scripting</li>
+                        <li>LaTeX (XeLaTeX)</li>
+                        <li>DevOps Fundamentals</li>
+                        <li>Git & GitHub Actions</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section id="contact" class="container section contact">
-        <h2>ارتباط با من</h2>
-        <p>برای همکاری، پروژه جدید یا فرصت شغلی خوشحال می‌شوم در تماس باشیم.</p>
-        <div class="contact-links">
-          <a href="mailto:you@example.com">you@example.com</a>
-          <a href="https://github.com/your-username" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noreferrer">LinkedIn</a>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-info">
+                        <h3>Persistent CLI File System</h3>
+                        <p>A custom file management system built in C. Features include virtual disk management, user permissions, free space management, and FUSE integration.</p>
+                        <div class="tech-stack">
+                            <span>C</span><span>FUSE</span><span>OS Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-info">
+                        <h3>LoRA Implementation from Scratch</h3>
+                        <p>Replication of the original Low-Rank Adaptation research paper. Implemented custom LoRA logic for Linear and Conv2d layers to optimize parameter-efficient fine-tuning.</p>
+                        <div class="tech-stack">
+                            <span>PyTorch</span><span>Machine Learning</span><span>Linear Algebra</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-info">
+                        <h3>Multi-Omic Variational Encoder</h3>
+                        <p>A computational biology pipeline generating synthetic multi-omic profiles using DepMap datasets for cancer cell line data augmentation.</p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>scRNA-seq</span><span>Bioinformatics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-info">
+                        <h3>Linear Algebra Practical Curriculum</h3>
+                        <p>Designed and curated practical assignments via Kaggle notebooks covering SVD, Orthogonality, and Matrix Factorization for university students.</p>
+                        <div class="tech-stack">
+                            <span>Jupyter</span><span>NumPy</span><span>Curriculum Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
-    </main>
+    </section>
 
-    <footer class="footer">
-      <p>© <span id="year"></span> تمامی حقوق محفوظ است.</p>
+    <section id="contact" class="section bg-alt">
+        <div class="container fade-in text-center">
+            <h2 class="section-title">Let's Connect</h2>
+            <p style="margin-bottom: 2rem; color: var(--text-secondary);">Whether it's discussing file system optimizations, deep learning architectures, or a new role, I'm always open to talking tech.</p>
+            <a href="mailto:your.email@example.com" class="btn primary-btn"><i class="fas fa-envelope"></i> Say Hello</a>
+        </div>
+    </section>
 
+    <footer>
+        <p>&copy; 2026 [Your Name]. Built from scratch.</p>
     </footer>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
