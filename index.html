@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>پورتفولیوی گیت‌هاب</title>
+    <meta name="description" content="پورتفولیو که مستقیماً از گیت‌هاب شما پر می‌شود" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <h1>پورتفولیوی زنده از گیت‌هاب</h1>
+        <p class="muted">به‌جای متن فیک، اطلاعات مستقیم از GitHub API لود می‌شود.</p>
+        <form id="usernameForm" class="username-form">
+          <label for="usernameInput">یوزرنیم گیت‌هاب:</label>
+          <input id="usernameInput" name="username" type="text" placeholder="مثلاً torvalds" required />
+          <button type="submit">بارگذاری</button>
+        </form>
+        <p id="status" class="status"></p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="profile" class="card hidden">
+        <div class="profile-head">
+          <img id="avatar" alt="avatar" />
+          <div>
+            <h2 id="name"></h2>
+            <p id="bio" class="muted"></p>
+            <div class="links">
+              <a id="githubLink" target="_blank" rel="noreferrer">GitHub</a>
+              <a id="blogLink" target="_blank" rel="noreferrer" class="hidden">Website</a>
+            </div>
+          </div>
+        </div>
+        <div class="stats" id="stats"></div>
+      </section>
+
+      <section id="reposSection" class="hidden">
+        <div class="section-head">
+          <h2>بهترین ریپازیتوری‌ها</h2>
+          <p class="muted">مرتب‌شده بر اساس ستاره</p>
+        </div>
+        <div id="repos" class="repo-grid"></div>
+      </section>
+
+      <section id="langsSection" class="card hidden">
+        <h2>تکنولوژی‌های پرتکرار</h2>
+        <div id="langs" class="chips"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> ساخته‌شده برای نمایش واقعی پروفایل شما</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
