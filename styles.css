@@ -1,0 +1,50 @@
+:root {
+  --bg: #0b1220;
+  --card: #131f35;
+  --text: #e9f1ff;
+  --muted: #9eb0d1;
+  --primary: #5b9dff;
+  --border: #233557;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Vazirmatn", "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #111b30, var(--bg));
+  color: var(--text);
+}
+.container { width: min(1050px, 92vw); margin: 0 auto; }
+.hero { padding: 3rem 0 2rem; border-bottom: 1px solid var(--border); }
+h1, h2 { margin: 0.3rem 0; }
+.muted { color: var(--muted); }
+.username-form { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 1rem; }
+input, button {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.65rem 0.8rem;
+  font: inherit;
+}
+input { background: #0d1729; color: var(--text); min-width: 220px; }
+button { background: var(--primary); color: #fff; cursor: pointer; }
+.status { min-height: 1.4rem; margin-top: 0.8rem; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.hidden { display: none; }
+.profile-head { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+#avatar { width: 96px; height: 96px; border-radius: 50%; border: 2px solid var(--border); }
+.links { display: flex; gap: 0.8rem; }
+.links a { color: var(--primary); text-decoration: none; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit,minmax(120px,1fr)); gap: 0.6rem; margin-top: 1rem; }
+.stat { background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 10px; padding: 0.7rem; text-align: center; }
+.repo-grid { margin-top: 1rem; display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 0.8rem; }
+.repo-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 0.9rem; }
+.repo-card a { color: var(--text); text-decoration: none; }
+.repo-meta { color: var(--muted); font-size: 0.9rem; margin-top: 0.5rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.7rem; }
+.chips span { border: 1px solid var(--border); border-radius: 999px; padding: 0.35rem 0.7rem; }
+.footer { text-align: center; padding: 1.5rem 0; border-top: 1px solid var(--border); margin-top: 2rem; color: var(--muted); }
