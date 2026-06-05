@@ -42,9 +42,9 @@
             <div class="hero-content">
                 <p class="sys-init">SYS/<span class="highlight">PROFILE</span>.INIT <span class="loading-bar">██████████ 100%</span></p>
                 <h1 class="glitch-title">Mohammadreza<br><span class="outline-text">Javadi</span></h1>
-                <h2 class="subtitle">>_ Computer Engineer</h2>
+<h2 class="subtitle">>_ Computer Engineering Student</h2>
                 <p class="bio">
-                    Final-year Computer Engineering student specializing in embedded systems, computer architecture, and distributed systems. Passionate about low-level programming, OS design, and high-performance computing. I thrive where hardware meets software.
+                    Computer Engineering student at Sharif University of Technology interested in operating systems, embedded and real-time systems, deep learning, and reinforcement learning. Open to both research and industry projects, with particular interest in AI Engineering, MLOps, and DevOps.
                 </p>
                 <div class="actions">
                     <button class="btn btn-primary">./explore_profile</button>
@@ -93,7 +93,7 @@
         </div>
         <div class="about-text">
             <p class="large-text">
-                I believe great engineering comes from deep understanding — not just writing code, but understanding <span class="highlight">why the silicon does what it does</span>. My projects span from FPGA-based CPU design to distributed systems, always driven by a passion for correctness, performance, and elegance.
+                I enjoy working across both systems and AI domains. My interests include operating systems, embedded and real-time systems, deep learning, and reinforcement learning. Whether the work is research-oriented or industry-focused, I enjoy learning new technologies quickly and adapting to unfamiliar challenges.    
             </p>
             <div class="info-cards-grid">
                 <div class="info-card">
@@ -117,45 +117,54 @@
             <h2 class="section-title"><span class="section-num">[02] EXECUTABLE REGISTRY</span>PROJECTS</h2>
             <div class="projects-grid">
                 <div class="project-card border-cyan">
-                    <div class="card-meta"><span class="cat cyan-text">⬡ HARDWARE</span><a href="#" class="git-link">/github</a></div>
-                    <h3>RISC-V Core</h3>
-                    <p class="proj-sub">Custom 32-bit Processor</p>
-                    <p class="proj-desc">Designed and implemented a 5-stage pipelined RISC-V CPU in SystemVerilog with branch prediction, forwarding, and hazard detection. Synthesized on Xilinx FPGA achieving 100MHz clock.</p>
-                    <div class="tags"><span>SystemVerilog</span><span>FPGA</span><span>Xilinx</span><span>RISC-V</span><span>Assembly</span></div>
+                    <div class="card-meta"><span class="cat cyan-text">⬡ AI</span><a href="#" class="git-link">/github</a></div>
+                    <h3>Aspect-Based Sentiment Analysis</h3>
+                    <p class="proj-sub">Transformer-based NLP System</p>
+                    <p class="proj-desc">
+                        Implemented Aspect-Based Sentiment Analysis using BERT and RoBERTa models on the SemEval-2014 dataset. The system predicts sentiment polarity for specific aspects in restaurant and laptop reviews.
+                    </p>
+                    <div class="tags"><span>Python</span><span>PyTorch</span><span>BERT</span><span>RoBERTa</span><span>NLP</span></div>
                 </div>
                 <div class="project-card border-purple">
-                    <div class="card-meta"><span class="cat purple-text">⌗ SYSTEMS</span><a href="#" class="git-link">/github</a></div>
-                    <h3>MiniOS</h3>
-                    <p class="proj-sub purple-text">x86 Operating System Kernel</p>
-                    <p class="proj-desc">Bare-metal OS kernel written in C and x86 Assembly. Features process scheduling (Round Robin + Priority), virtual memory with paging, system call interface, and a simple ext2-like filesystem.</p>
-                    <div class="tags"><span>C</span><span>x86 Assembly</span><span>QEMU</span><span>GDB</span><span>Makefile</span></div>
-                </div>
+                    <div class="card-meta"><span class="cat purple-text">⌗ SYSTEMS and HARDWARE</span><a href="#" class="git-link">/github</a></div>
+                    <h3>Multi-Cycle CPU</h3>
+                    <p class="proj-sub purple-text">Verilog Processor Implementation</p>
+                    <p class="proj-desc">
+Implemented a complete multi-cycle processor with a simplified MIPS-like ISA in Verilog. The design includes datapath, control unit, memory interface, and FPGA-ready implementation.
+</p>
+                    <div class="tags"><span>Verilog</span><span>CPU Design</span><span>FPGA</span><span>Architecture</span></div>
+                    </div>
                 <div class="project-card border-cyan">
-                    <div class="card-meta"><span class="cat cyan-text">◈ DISTRIBUTED</span><a href="#" class="git-link">/github</a></div>
-                    <h3>DistKV</h3>
-                    <p class="proj-sub">Distributed Key-Value Store</p>
-                    <p class="proj-desc">Fault-tolerant distributed KV store implementing the Raft consensus algorithm. Supports leader election, log replication, and snapshotting. Tested with Jepsen for linearizability under network partitions.</p>
-                    <div class="tags"><span>Go</span><span>gRPC</span><span>Raft</span><span>Docker</span><span>Jepsen</span></div>
+                    <div class="card-meta"><span class="cat cyan-text">◈ SYSTEMS and VISION</span><a href="#" class="git-link">/github</a></div>
+                    <h3>Image Processing on Raspberry Pi</h3>
+                    <p class="proj-sub">Surface Area Estimation System</p>
+                    <p class="proj-desc">
+Developed an image processing pipeline using Python, NumPy, and OpenCV on Raspberry Pi to estimate object surface areas from captured images.
+</p>
+                <div class="tags"><span>Python</span><span>Open-cv</span></div>
                 </div>
                 <div class="project-card border-purple">
                     <div class="card-meta"><span class="cat purple-text">⬡ HARDWARE</span><a href="#" class="git-link">/github</a></div>
-                    <h3>NeuralSynth</h3>
-                    <p class="proj-sub purple-text">FPGA Neural Network Accelerator</p>
-                    <p class="proj-desc">Hardware accelerator for inference of small CNNs on FPGAs. Optimized for high throughput using parallel MAC units and custom quantization methodologies.</p>
-                    <div class="tags"><span>VHDL</span><span>Vivado</span><span>CNN</span><span>Quantization</span></div>
+                    <h3>ChampSim Cache replacement policies</h3>
+                    <p class="proj-sub purple-text">Cache Replacement Project</p>
+                    <p class="proj-desc"> Implementing various Cache replacement policies and analaysing their performance using ChampSim</p>
+                    <div class="tags"><span>C++</span></div>
                 </div>
                 <div class="project-card border-cyan">
-                    <div class="card-meta"><span class="cat cyan-text">🌐 NETWORKS</span><a href="#" class="git-link">/github</a> <a href="#" class="git-link">/demo</a></div>
-                    <h3>NetSim</h3>
-                    <p class="proj-sub">Network Protocol Simulator</p>
-                    <p class="proj-desc">Simulation engine for TCP/IP protocol stack with congestion control visualization, packet drop emulation, and routing algorithms logic.</p>
-                    <div class="tags"><span>C++</span><span>Python</span><span>Threads</span></div>
+                    <div class="card-meta"><span class="cat cyan-text">⬡ Embded</span><a href="#" class="git-link">/github</a> <a href="#" class="git-link">/demo</a></div>
+                    <h3>Dino Run on ESP32</h3>
+                    <p class="proj-sub">Embedded Hardware Project</p>
+                    <p class="proj-desc">
+Developed an embedded implementation of the Dino Run game on ESP32 for a hardware competition, focusing on timing constraints and hardware interaction.
+</p>
                 </div>
                 <div class="project-card border-purple">
-                    <div class="card-meta"><span class="cat purple-text">⌗ SYSTEMS</span><a href="#" class="git-link">/github</a></div>
-                    <h3>CompileX</h3>
-                    <p class="proj-sub purple-text">Optimizing Compiler for MiniLang</p>
-                    <p class="proj-desc">Full compiler pipeline for a C-subset language: lexer, parser, AST generation, type checking, intermediate representation (IR) optimization, and x86 code generation.</p>
+                    <div class="card-meta"><span class="cat purple-text">⌗ SOFTWARE</span><a href="#" class="git-link">/github</a></div>
+                    <h3>Gwent AP Project</h3>
+                    <p class="proj-sub purple-text">Java Card Game</p>
+                    <p class="proj-desc">
+Large-scale Java project developed as part of the Advanced Programming course, implementing a digital version of the Gwent card game.
+</p>
                     <div class="tags"><span>C++</span><span>LLVM</span><span>Flex/Bison</span></div>
                 </div>
             </div>
@@ -231,16 +240,15 @@
             <div class="grades-dashboard">
                 <div class="gpa-radial">
                     <div class="radial-content">
-                        <h3>89.4</h3>
-                        <span>GPA / 100</span>
-                        <small>SCALE: 0-100</small>
+                        <h3>18.9</h3>
+                        <span>GPA / 20</span>
+                        <small>SCALE: 0-20</small>
                     </div>
                 </div>
                 <div class="grades-stats">
-                    <div class="stat-box"><span>GPA SCORE</span><strong>89.4/100</strong></div>
-                    <div class="stat-box purple-text"><span>COURSES TAKEN</span><strong>12</strong></div>
-                    <div class="stat-box"><span>AVERAGE GRADE</span><strong>91/100</strong></div>
-                    <div class="stat-box purple-text"><span>HIGHEST GRADE</span><strong>98/100</strong></div>
+                    <div class="stat-box"><span>GPA SCORE</span><strong>18.9/20</strong></div>
+                    <div class="stat-box purple-text"><span>COURSES TAKEN</span><strong>111</strong></div>
+                    <div class="stat-box purple-text"><span>HIGHEST GRADE</span><strong>20</strong></div>
                 </div>
             </div>
             
@@ -250,9 +258,15 @@
                         <tr><th>COURSE</th><th>CODE</th><th>CREDITS</th><th>SEMESTER</th><th style="text-align: right;">GRADE ↓</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>Introduction to CS</td><td>234111</td><td>3.5</td><td>Fall 2021</td><td class="g-cell">98</td></tr>
-                        <tr><td>Computer Architecture</td><td>234267</td><td>3.5</td><td>Fall 2023</td><td class="g-cell">97</td></tr>
-                        <tr><td>Algorithms 1</td><td>234247</td><td>3.5</td><td>Fall 2022</td><td class="g-cell">95</td></tr>
+        <tr><td>Machine Learning</td><td>ML</td><td>-</td><td>1404-2</td><td class="g-cell">20</td></tr>
+        <tr><td>Artificial Intelligence</td><td>AI</td><td>-</td><td>1404-2</td><td class="g-cell">20</td></tr>
+        <tr><td>Database Systems</td><td>DB</td><td>-</td><td>1404-2</td><td class="g-cell">20</td></tr>
+        <tr><td>Linear Algebra</td><td>LA</td><td>-</td><td>1404-1</td><td class="g-cell">20</td></tr>
+        <tr><td>Bioinformatics</td><td>BIO</td><td>-</td><td>1404-2</td><td class="g-cell">20</td></tr>
+        <tr><td>Design of Algorithms</td><td>DA</td><td>-</td><td>1404-1</td><td class="g-cell">20</td></tr>
+        <tr><td>CSL</td><td>CSL</td><td>-</td><td>1404-1</td><td class="g-cell">20</td></tr>
+        <tr><td>Operating Systems</td><td>OS</td><td>-</td><td>1404-2</td><td class="g-cell">19.5</td></tr>
+        <tr><td>Computer Architecture</td><td>ARCH</td><td>-</td><td>1404-1</td><td class="g-cell">19.9</td></tr>
                     </tbody>
                 </table>
             </div>
