@@ -3,136 +3,378 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Systems & ML</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Mohammadreza Javadi | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <nav class="navbar">
-        <div class="nav-content">
-            <a href="#home" class="logo">Portfolio.</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+        <a href="#init" class="nav-item active">
+            <span class="icon">⬡</span><span class="label">INIT</span>
+        </a>
+        <a href="#about" class="nav-item">
+            <span class="icon">◈</span><span class="label">ABOUT</span>
+        </a>
+        <a href="#projects" class="nav-item">
+            <span class="icon">⬢</span><span class="label">PROJECTS</span>
+        </a>
+        <a href="#skills" class="nav-item">
+            <span class="icon">◉</span><span class="label">SKILLS</span>
+        </a>
+        <a href="#lang" class="nav-item">
+            <span class="icon">◎</span><span class="label">LANG</span>
+        </a>
+        <a href="#grades" class="nav-item">
+            <span class="icon">♦</span><span class="label">GRADES</span>
+        </a>
+        <a href="#ta" class="nav-item">
+            <span class="icon">◊</span><span class="label">TA</span>
+        </a>
+        <a href="#contact" class="nav-item">
+            <span class="icon">⊕</span><span class="label">CONTACT</span>
+        </a>
     </nav>
 
-    <header id="home" class="hero section">
-        <div class="hero-content fade-in">
-            <h1>Hi, I'm <span class="highlight">[Your Name]</span></h1>
-            <p class="subtitle">Systems Developer & Machine Learning Enthusiast</p>
-            <p class="description">Bridging the gap between low-level system architecture and parameter-efficient AI.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn primary-btn">View My Work</a>
-                <a href="https://github.com/yourusername" target="_blank" class="btn secondary-btn"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-        </div>
-    </header>
-
-    <section id="about" class="section">
-        <div class="container fade-in">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>I am a developer with a deep interest in both the underlying logic of operating systems and the frontier of machine learning. Currently acting as a Teaching Assistant for Linear Algebra, I enjoy translating complex mathematical concepts into practical, computable realities.</p>
-                <p>My work spans from designing persistent file systems in C to replicating cutting-edge PEFT papers like LoRA from scratch. I am actively expanding my expertise into DevOps to ensure the pipelines I build for computational biology and edge computing are robust, scalable, and ready for production environments.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section bg-alt">
-        <div class="container fade-in">
-            <h2 class="section-title">Technical Arsenal</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-microchip"></i> Systems & Edge</h3>
-                    <ul>
-                        <li>C & C++</li>
-                        <li>FUSE & File Systems</li>
-                        <li>Real-Time Systems (EDF/LDF)</li>
-                        <li>Vehicular Edge Computing (VEC)</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> AI & Machine Learning</h3>
-                    <ul>
-                        <li>PyTorch & PyTorch Geometric</li>
-                        <li>PEFT (LoRA)</li>
-                        <li>Reinforcement Learning</li>
-                        <li>MOVE Pipelines</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools & Engineering</h3>
-                    <ul>
-                        <li>Linux & Shell Scripting</li>
-                        <li>LaTeX (XeLaTeX)</li>
-                        <li>DevOps Fundamentals</li>
-                        <li>Git & GitHub Actions</li>
-                    </ul>
+    <main class="container">
+        
+        <section id="init" class="section">
+            <div class="hero-content">
+                <p class="sys-init">SYS/<span class="highlight">PROFILE</span>.INIT <span class="loading-bar">██████████ 100%</span></p>
+                <h1 class="glitch-title">Mohammadreza<br><span class="outline-text">Javadi</span></h1>
+                <h2 class="subtitle">>_ Computer Engineer</h2>
+                <p class="bio">
+                    Final-year Computer Engineering student specializing in embedded systems, computer architecture, and distributed systems. Passionate about low-level programming, OS design, and high-performance computing. I thrive where hardware meets software.
+                </p>
+                <div class="actions">
+                    <button class="btn btn-primary">./explore_profile</button>
+                    <button class="btn btn-secondary">/github</button>
                 </div>
             </div>
+            
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    <span class="terminal-title">kernel@javadi:~$</span>
+                </div>
+                <div class="terminal-body">
+                    <p>> boot sequence initialized...</p>
+                    <p>> loading kernel modules......</p>
+                    <p class="log-ok">> [ OK ] Engineering Degree.....VALID</p>
+                    <p class="log-ok">> [ OK ] GPA Status.............LOADED</p>
+                    <p class="log-ok">> [ OK ] Programming....LOADED</p>
+                    <p class="log-ok">> [ OK ] Devops........LOADED</p>
+                    <p class="log-purple">> [ OK ] Research Mode..........ACTIVE</p>
+                    <p>> identity.conf → mounting profile...</p>
+                    <p class="log-blue">> USER: Mohammadreza | Sharif University of Technology</p>
+                    <p class="status-ready">> STATUS: READY <span class="cursor">█</span></p>
+                </div>
+            </div>
+        </section>
+<section id="about" class="section">
+    <h2 class="section-title"><span class="section-num">[01] IDENTITY MODULE</span>ABOUT ME</h2>
+    <div class="about-grid">
+        <div class="about-visual">
+            <div class="gear-box">
+                <div class="code-overlay">
+                    <pre>
+<span class="tok-type">int</span> <span class="tok-func">main</span>() {
+  <span class="tok-class">Engineer</span> e;
+  e.<span class="tok-func">init</span>(<span class="tok-str">"Tehran"</span>);
+  e.<span class="tok-func">load</span>(Systems);
+  e.<span class="tok-func">load</span>(AI);
+  e.<span class="tok-func">load</span>(Software);
+  e.<span class="tok-func">run</span>(forever);
+  <span class="tok-keyword">return</span> <span class="tok-const">SUCCESS</span>;
+}</pre>
+                </div>
+                <div class="gear-icon">⚙️</div>
+            </div>
         </div>
-    </section>
+        <div class="about-text">
+            <p class="large-text">
+                I believe great engineering comes from deep understanding — not just writing code, but understanding <span class="highlight">why the silicon does what it does</span>. My projects span from FPGA-based CPU design to distributed systems, always driven by a passion for correctness, performance, and elegance.
+            </p>
+            <div class="info-cards-grid">
+                <div class="info-card">
+                    <span class="card-icon">🏛️</span>
+                    <div class="card-det"><span>UNIVERSITY</span><strong>Sharif University of Technology (SUT)</strong></div>
+                </div>
+                <div class="info-card">
+                    <span class="card-icon">📐</span>
+                    <div class="card-det"><span>DEGREE</span><strong>B.Sc. Computer Engineering</strong></div>
+                </div>
+                <div class="info-card">
+                    <span class="card-icon">📅</span>
+                    <div class="card-det"><span>YEAR</span><strong>3rd Year</strong></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title fade-in">Featured Projects</h2>
+        <section id="projects" class="section">
+            <h2 class="section-title"><span class="section-num">[02] EXECUTABLE REGISTRY</span>PROJECTS</h2>
             <div class="projects-grid">
-                <div class="project-card fade-in">
-                    <div class="project-info">
-                        <h3>Persistent CLI File System</h3>
-                        <p>A custom file management system built in C. Features include virtual disk management, user permissions, free space management, and FUSE integration.</p>
-                        <div class="tech-stack">
-                            <span>C</span><span>FUSE</span><span>OS Design</span>
-                        </div>
+                <div class="project-card border-cyan">
+                    <div class="card-meta"><span class="cat cyan-text">⬡ HARDWARE</span><a href="#" class="git-link">/github</a></div>
+                    <h3>RISC-V Core</h3>
+                    <p class="proj-sub">Custom 32-bit Processor</p>
+                    <p class="proj-desc">Designed and implemented a 5-stage pipelined RISC-V CPU in SystemVerilog with branch prediction, forwarding, and hazard detection. Synthesized on Xilinx FPGA achieving 100MHz clock.</p>
+                    <div class="tags"><span>SystemVerilog</span><span>FPGA</span><span>Xilinx</span><span>RISC-V</span><span>Assembly</span></div>
+                </div>
+                <div class="project-card border-purple">
+                    <div class="card-meta"><span class="cat purple-text">⌗ SYSTEMS</span><a href="#" class="git-link">/github</a></div>
+                    <h3>MiniOS</h3>
+                    <p class="proj-sub purple-text">x86 Operating System Kernel</p>
+                    <p class="proj-desc">Bare-metal OS kernel written in C and x86 Assembly. Features process scheduling (Round Robin + Priority), virtual memory with paging, system call interface, and a simple ext2-like filesystem.</p>
+                    <div class="tags"><span>C</span><span>x86 Assembly</span><span>QEMU</span><span>GDB</span><span>Makefile</span></div>
+                </div>
+                <div class="project-card border-cyan">
+                    <div class="card-meta"><span class="cat cyan-text">◈ DISTRIBUTED</span><a href="#" class="git-link">/github</a></div>
+                    <h3>DistKV</h3>
+                    <p class="proj-sub">Distributed Key-Value Store</p>
+                    <p class="proj-desc">Fault-tolerant distributed KV store implementing the Raft consensus algorithm. Supports leader election, log replication, and snapshotting. Tested with Jepsen for linearizability under network partitions.</p>
+                    <div class="tags"><span>Go</span><span>gRPC</span><span>Raft</span><span>Docker</span><span>Jepsen</span></div>
+                </div>
+                <div class="project-card border-purple">
+                    <div class="card-meta"><span class="cat purple-text">⬡ HARDWARE</span><a href="#" class="git-link">/github</a></div>
+                    <h3>NeuralSynth</h3>
+                    <p class="proj-sub purple-text">FPGA Neural Network Accelerator</p>
+                    <p class="proj-desc">Hardware accelerator for inference of small CNNs on FPGAs. Optimized for high throughput using parallel MAC units and custom quantization methodologies.</p>
+                    <div class="tags"><span>VHDL</span><span>Vivado</span><span>CNN</span><span>Quantization</span></div>
+                </div>
+                <div class="project-card border-cyan">
+                    <div class="card-meta"><span class="cat cyan-text">🌐 NETWORKS</span><a href="#" class="git-link">/github</a> <a href="#" class="git-link">/demo</a></div>
+                    <h3>NetSim</h3>
+                    <p class="proj-sub">Network Protocol Simulator</p>
+                    <p class="proj-desc">Simulation engine for TCP/IP protocol stack with congestion control visualization, packet drop emulation, and routing algorithms logic.</p>
+                    <div class="tags"><span>C++</span><span>Python</span><span>Threads</span></div>
+                </div>
+                <div class="project-card border-purple">
+                    <div class="card-meta"><span class="cat purple-text">⌗ SYSTEMS</span><a href="#" class="git-link">/github</a></div>
+                    <h3>CompileX</h3>
+                    <p class="proj-sub purple-text">Optimizing Compiler for MiniLang</p>
+                    <p class="proj-desc">Full compiler pipeline for a C-subset language: lexer, parser, AST generation, type checking, intermediate representation (IR) optimization, and x86 code generation.</p>
+                    <div class="tags"><span>C++</span><span>LLVM</span><span>Flex/Bison</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2 class="section-title"><span class="section-num">[03] PRIMITIVE REGISTRY</span>SKILLS & STACK</h2>
+            <div class="skills-grid">
+                <div class="skills-box">
+                    <h4>LANGUAGES</h4>
+                    <div class="skill-row"><span>C / C++</span><span>95%</span><div class="bar"><div class="fill" style="width: 95%"></div></div></div>
+                    <div class="skill-row"><span>Python</span><span>90%</span><div class="bar"><div class="fill" style="width: 90%"></div></div></div>
+                    <div class="skill-row"><span>Go</span><span>75%</span><div class="bar"><div class="fill" style="width: 75%"></div></div></div>
+                    <div class="skill-row"><span>Rust</span><span>65%</span><div class="bar"><div class="fill" style="width: 65%"></div></div></div>
+                    <div class="skill-row"><span>SystemVerilog / VHDL</span><span>80%</span><div class="bar"><div class="fill" style="width: 80%"></div></div></div>
+                    <div class="skill-row"><span>x86 / RISC-V Assembly</span><span>70%</span><div class="bar"><div class="fill" style="width: 70%"></div></div></div>
+                </div>
+                <div class="skills-box">
+                    <h4>SYSTEMS & HARDWARE</h4>
+                    <div class="skill-row"><span>Linux Kernel</span><span>80%</span><div class="bar"><div class="fill purple-fill" style="width: 80%"></div></div></div>
+                    <div class="skill-row"><span>FPGA Design</span><span>85%</span><div class="bar"><div class="fill purple-fill" style="width: 85%"></div></div></div>
+                    <div class="skill-row"><span>Embedded Systems</span><span>88%</span><div class="bar"><div class="fill purple-fill" style="width: 88%"></div></div></div>
+                    <div class="skill-row"><span>Computer Architecture</span><span>92%</span><div class="bar"><div class="fill purple-fill" style="width: 92%"></div></div></div>
+                    <div class="skill-row"><span>RTOS</span><span>70%</span><div class="bar"><div class="fill purple-fill" style="width: 70%"></div></div></div>
+                </div>
+                <div class="skills-box">
+                    <h4>TOOLS & PLATFORMS</h4>
+                    <div class="skill-row"><span>Git / GitHub</span><span>95%</span><div class="bar"><div class="fill" style="width: 95%"></div></div></div>
+                    <div class="skill-row"><span>Docker / Kubernetes</span><span>72%</span><div class="bar"><div class="fill" style="width: 72%"></div></div></div>
+                    <div class="skill-row"><span>GDB / Valgrind</span><span>85%</span><div class="bar"><div class="fill" style="width: 85%"></div></div></div>
+                    <div class="skill-row"><span>Vivado / Quartus</span><span>80%</span><div class="bar"><div class="fill" style="width: 80%"></div></div></div>
+                    <div class="skill-row"><span>QEMU / KVM</span><span>75%</span><div class="bar"><div class="fill" style="width: 75%"></div></div></div>
+                </div>
+                <div class="skills-box">
+                    <h4>CONCEPTS</h4>
+                    <div class="skill-row"><span>Operating Systems</span><span>90%</span><div class="bar"><div class="fill purple-fill" style="width: 90%"></div></div></div>
+                    <div class="skill-row"><span>Distributed Systems</span><span>82%</span><div class="bar"><div class="fill purple-fill" style="width: 82%"></div></div></div>
+                    <div class="skill-row"><span>Computer Networks</span><span>88%</span><div class="bar"><div class="fill purple-fill" style="width: 88%"></div></div></div>
+                    <div class="skill-row"><span>Algorithms & DS</span><span>93%</span><div class="bar"><div class="fill purple-fill" style="width: 93%"></div></div></div>
+                    <div class="skill-row"><span>Compilers</span><span>78%</span><div class="bar"><div class="fill purple-fill" style="width: 78%"></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lang" class="section">
+            <h2 class="section-title"><span class="section-num">[04] LOCALE STACK</span>LANGUAGES</h2>
+            <div class="lang-grid">
+                <div class="lang-card">
+                    <div class="lang-meta"><span>IL</span> <strong>Hebrew</strong></div>
+                    <div class="lang-level">Native <span class="score-bg">100</span></div>
+                    <div class="lang-indicator"><span class="step active"></span><span class="step active"></span><span class="step active"></span><span class="step active"></span><span class="step active"></span></div>
+                </div>
+                <div class="lang-card">
+                    <div class="lang-meta"><span>US</span> <strong>English</strong></div>
+                    <div class="lang-level" style="color: var(--secondary)">Fluent (C1) <span class="score-bg" style="color: var(--secondary)">90</span></div>
+                    <div class="lang-indicator"><span class="step p-active"></span><span class="step p-active"></span><span class="step p-active"></span><span class="step p-active"></span><span class="step"></span></div>
+                </div>
+                <div class="lang-card">
+                    <div class="lang-meta"><span>SA</span> <strong>Arabic</strong></div>
+                    <div class="lang-level">Intermediate (B1) <span class="score-bg">55</span></div>
+                    <div class="lang-indicator"><span class="step active"></span><span class="step active"></span><span class="step active"></span><span class="step"></span><span class="step"></span></div>
+                </div>
+                <div class="lang-card">
+                    <div class="lang-meta"><span>RU</span> <strong>Russian</strong></div>
+                    <div class="lang-level" style="color: var(--secondary)">Basic (A2) <span class="score-bg" style="color: var(--secondary)">30</span></div>
+                    <div class="lang-indicator"><span class="step p-active"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="grades" class="section">
+            <h2 class="section-title"><span class="section-num">[05] EVALUATION REGISTRY</span>GRADES</h2>
+            <div class="grades-dashboard">
+                <div class="gpa-radial">
+                    <div class="radial-content">
+                        <h3>89.4</h3>
+                        <span>GPA / 100</span>
+                        <small>SCALE: 0-100</small>
                     </div>
                 </div>
-                <div class="project-card fade-in">
-                    <div class="project-info">
-                        <h3>LoRA Implementation from Scratch</h3>
-                        <p>Replication of the original Low-Rank Adaptation research paper. Implemented custom LoRA logic for Linear and Conv2d layers to optimize parameter-efficient fine-tuning.</p>
-                        <div class="tech-stack">
-                            <span>PyTorch</span><span>Machine Learning</span><span>Linear Algebra</span>
+                <div class="grades-stats">
+                    <div class="stat-box"><span>GPA SCORE</span><strong>89.4/100</strong></div>
+                    <div class="stat-box purple-text"><span>COURSES TAKEN</span><strong>12</strong></div>
+                    <div class="stat-box"><span>AVERAGE GRADE</span><strong>91/100</strong></div>
+                    <div class="stat-box purple-text"><span>HIGHEST GRADE</span><strong>98/100</strong></div>
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <table class="grades-table">
+                    <thead>
+                        <tr><th>COURSE</th><th>CODE</th><th>CREDITS</th><th>SEMESTER</th><th style="text-align: right;">GRADE ↓</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Introduction to CS</td><td>234111</td><td>3.5</td><td>Fall 2021</td><td class="g-cell">98</td></tr>
+                        <tr><td>Computer Architecture</td><td>234267</td><td>3.5</td><td>Fall 2023</td><td class="g-cell">97</td></tr>
+                        <tr><td>Algorithms 1</td><td>234247</td><td>3.5</td><td>Fall 2022</td><td class="g-cell">95</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="ta" class="section">
+            <h2 class="section-title"><span class="section-num">[06] SYSTEM PERMISSIONS</span>TA EXPERIENCE</h2>
+            <p class="ta-subtitle">> Courses where root-level teaching access was granted</p>
+            
+            <div class="ta-accordion">
+                <div class="ta-item active-ta">
+                    <div class="ta-header">
+                        <div class="ta-title-row">
+                            <span class="root-badge">ROOT</span>
+                            <strong>Data Structures</strong>
+                            <span class="ta-role">Teaching Assistant</span>
+                            <span class="dot-sep">•</span>
+                            <span>Spring 2023</span>
+                            <span class="dot-sep">•</span>
+                            <span>~40 students</span>
                         </div>
+                        <span class="toggle-icon">×</span>
+                    </div>
+                    <div class="ta-body">
+                        <h5>ROLE DESCRIPTION</h5>
+                        <p>Led weekly recitations for 40+ students, graded assignments, held office hours, and prepared practice problems covering trees, heaps, hash tables, and graph algorithms.</p>
+                        <small>COURSE_ID: 234218</small>
                     </div>
                 </div>
-                <div class="project-card fade-in">
-                    <div class="project-info">
-                        <h3>Multi-Omic Variational Encoder</h3>
-                        <p>A computational biology pipeline generating synthetic multi-omic profiles using DepMap datasets for cancer cell line data augmentation.</p>
-                        <div class="tech-stack">
-                            <span>Python</span><span>scRNA-seq</span><span>Bioinformatics</span>
+
+                <div class="ta-item">
+                    <div class="ta-header">
+                        <div class="ta-title-row">
+                            <span class="root-badge">ROOT</span>
+                            <strong>Computer Architecture</strong>
+                            <span class="ta-role" style="color: var(--secondary);">Senior Teaching Assistant</span>
+                            <span class="dot-sep">•</span>
+                            <span>Fall 2023 & Fall 2024</span>
+                            <span class="dot-sep">•</span>
+                            <span>~60 students</span>
                         </div>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="ta-body">
+                        <h5>ROLE DESCRIPTION</h5>
+                        <p>Assisted in teaching MIPS/RISC-V assembly programming, CPU pipelining, cache memory mapping, and digital logic. Formulated hardware lab assignments and evaluated CPU simulators.</p>
+                        <small>COURSE_ID: 234211</small>
                     </div>
                 </div>
-                <div class="project-card fade-in">
-                    <div class="project-info">
-                        <h3>Linear Algebra Practical Curriculum</h3>
-                        <p>Designed and curated practical assignments via Kaggle notebooks covering SVD, Orthogonality, and Matrix Factorization for university students.</p>
-                        <div class="tech-stack">
-                            <span>Jupyter</span><span>NumPy</span><span>Curriculum Design</span>
+
+                <div class="ta-item">
+                    <div class="ta-header">
+                        <div class="ta-title-row">
+                            <span class="root-badge">ROOT</span>
+                            <strong>Algorithms 1</strong>
+                            <span class="ta-role">Teaching Assistant</span>
+                            <span class="dot-sep">•</span>
+                            <span>Spring 2024</span>
+                            <span class="dot-sep">•</span>
+                            <span>~50 students</span>
                         </div>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="ta-body">
+                        <h5>ROLE DESCRIPTION</h5>
+                        <p>Conducted problem-solving workshops focusing on dynamic programming, greedy algorithms, divide-and-conquer strategy, and fundamental graph traversals (BFS/DFS).</p>
+                        <small>COURSE_ID: 234313</small>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="section bg-alt">
-        <div class="container fade-in text-center">
-            <h2 class="section-title">Let's Connect</h2>
-            <p style="margin-bottom: 2rem; color: var(--text-secondary);">Whether it's discussing file system optimizations, deep learning architectures, or a new role, I'm always open to talking tech.</p>
-            <a href="mailto:your.email@example.com" class="btn primary-btn"><i class="fas fa-envelope"></i> Say Hello</a>
-        </div>
-    </section>
+        <section id="contact" class="section">
+            <h2 class="section-title"><span class="section-num">[07] TRANSMISSION LINK</span>CONTACT & UPLINK</h2>
+            <p class="contact-msg">
+                Open for <span class="cyan-text">Industry R&D opportunities</span>, <span class="purple-text">Academic Research collaborations</span>, and core systems design engineering inquiries. Initialize the secure transmission protocol below to bridge the gap between theory and deployment.
+            </p>
+            
+            <div class="contact-list">
+                <div class="contact-row">
+                    <span class="c-icon">✉</span>
+                    <div class="c-data">
+                        <span>PRIMARY EMAIL</span>
+                        <strong><a href="mailto:1remehr@gmail.com">1remehr@gmail.com</a></strong>
+                    </div>
+                </div>
+                
+                <div class="contact-row">
+                    <span class="c-icon">💼</span>
+                    <div class="c-data">
+                        <span>LINKEDIN NETWORK</span>
+                        <strong><a href="https://linkedin.com/in/your-username" target="_blank">linkedin.com/in/your-username</a></strong>
+                    </div>
+                </div>
 
-    <footer>
-        <p>&copy; 2026 [Your Name]. Built from scratch.</p>
-    </footer>
+                <div class="contact-row">
+                    <span class="c-icon">⚙</span>
+                    <div class="c-data">
+                        <span>CODE REPOSITORIES</span>
+                        <strong><a href="https://github.com/alexriven" target="_blank">github.com/alexriven</a></strong>
+                    </div>
+                </div>
+
+                <div class="contact-row">
+                    <span class="c-icon">✈</span>
+                    <div class="c-data">
+                        <span>TELEGRAM MODULE</span>
+                        <strong><a href="https://t.me/username" target="_blank">@username</a></strong>
+                    </div>
+                </div>
+
+                <div class="contact-row">
+                    <span class="c-icon">⬢</span>
+                    <div class="c-data">
+                        <span>BALE NODE</span>
+                        <strong><a href="https://ble.ir/username" target="_blank">ble.ir/username</a></strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <script src="script.js"></script>
 </body>
